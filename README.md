@@ -1,5 +1,18 @@
 ﻿# Project FrankenServer
 
+<!-- Quick badges & links -->
+<p align="left">
+  <a href="docs/Phase1-Hardware.md"><img src="https://img.shields.io/badge/Phase%201-Hardware-0ea5e9" alt="Phase 1"></a>
+  <a href="docs/Phase2-Proxmox.md"><img src="https://img.shields.io/badge/Phase%202-Proxmox-10b981" alt="Phase 2"></a>
+  <a href="docs/Phase3-pfSense.md"><img src="https://img.shields.io/badge/Phase%203-pfSense-f59e0b" alt="Phase 3"></a>
+  <a href="docs/Phase4-VLANs.md"><img src="https://img.shields.io/badge/Phase%204-VLANs%2FPi--hole%2FHA-8b5cf6" alt="Phase 4"></a>
+  <a href="docs/Diagrams/"><img src="https://img.shields.io/badge/View-Diagrams-6366f1" alt="Diagrams"></a>
+  <a href="#configs--templates-sanitized"><img src="https://img.shields.io/badge/Configs-Sanitized-64748b" alt="Configs"></a>
+</p>
+
+[Open Phase 1](docs/Phase1-Hardware.md) • [Phase 2](docs/Phase2-Proxmox.md) • [Phase 3](docs/Phase3-pfSense.md) • [Phase 4](docs/Phase4-VLANs.md) • [Diagrams](docs/Diagrams/) • [Configs](#configs--templates-sanitized)
+
+
 
 
 
@@ -31,3 +44,16 @@ This repo includes **sanitized example configs** to demonstrate structure and ap
 4. Never commit real secrets — this repo uses hooks/ignore rules to help prevent that.
 
 **Security note:** All IPs/hostnames shown in docs are examples; production uses different ranges, hostnames, and credentials.
+
+## 🎥 Videos
+- Phase 1 – Hardware overview: _Coming soon_
+- Phase 2 – Proxmox install: _Coming soon_
+- Phase 3 – pfSense deployment: _Coming soon_
+- Phase 4 – VLANs, Pi-hole, Home Assistant: _Coming soon_
+
+## TODO
+- [ ] Finish SATA port mapping & ZFS pool
+- [ ] Replace dual 10GbE NIC or stay 1GbE
+- [ ] Add screenshots to all phases
+- [ ] Sanitize and upload example diagrams
+- [ ] Add video links
