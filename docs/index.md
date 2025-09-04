@@ -12,12 +12,12 @@ Proxmox + pfSense homelab showcasing virtualization, VLAN segmentation, Pi-hole,
 {: .note }
 
 ### Quick links
-<a class=\"btn btn-primary\" href=\"../docs/Phase1-Hardware.md\">Phase 1 – Hardware</a>
-<a class=\"btn btn-primary\" href=\"../docs/Phase2-Proxmox.md\">Phase 2 – Proxmox</a>
-<a class=\"btn btn-primary\" href=\"../docs/Phase3-pfSense.md\">Phase 3 – pfSense VM</a>
-<a class=\"btn btn-primary\" href=\"../docs/Phase4-VLANs.md\">Phase 4 – VLANs / Pi-hole / HA</a>
-<a class=\"btn\" href=\"../docs/Diagrams/\">Diagrams</a>
-<a class=\"btn\" href=\"../#configs--templates-sanitized\">Sanitized Configs</a>
+[Phase 1 – Hardware](Phase1-Hardware.md){: .btn .btn-primary }
+[Phase 2 – Proxmox](Phase2-Proxmox.md){: .btn .btn-primary }
+[Phase 3 – pfSense VM](Phase3-pfSense.md){: .btn .btn-primary }
+[Phase 4 – VLANs / Pi-hole / HA](Phase4-VLANs.md){: .btn .btn-primary }
+[Diagrams](Diagrams/){: .btn }
+[Sanitized Configs (GitHub README)](https://github.com/Redleg101/Project-FrankenServer#configs--templates-sanitized){: .btn }
 
 ---
 
