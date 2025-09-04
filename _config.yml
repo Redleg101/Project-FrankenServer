@@ -1,0 +1,4 @@
+﻿title: Project FrankenServer
+description: Proxmox + pfSense homelab with VLANs, Pi-hole, Home Assistant (sanitized docs & configs).
+theme: jekyll-theme-cayman
+show_downloads: false

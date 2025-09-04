@@ -59,3 +59,6 @@ This repo includes **sanitized example configs** to demonstrate structure and ap
 - [ ] Add screenshots to all phases
 - [ ] Sanitize and upload example diagrams
 - [ ] Add video links
+
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://Redleg101.github.io/Project-FrankenServer/)
+
