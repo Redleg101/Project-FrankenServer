@@ -1,4 +1,6 @@
 ﻿# Project FrankenServer
+![Last commit](https://img.shields.io/github/last-commit/Redleg101/Project-FrankenServer)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 <!-- Quick badges & links -->
 <p align="left">
