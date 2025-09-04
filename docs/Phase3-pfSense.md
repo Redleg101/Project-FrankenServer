@@ -16,14 +16,14 @@ This phase sets up WAN/LAN, VLAN interfaces, DHCP scopes, baseline firewall rule
 ### VLAN plan (you can keep these defaults)
 | VLAN | Name         | Subnet           | Gateway (pfSense) | Notes                                        |
 |-----:|--------------|------------------|-------------------|----------------------------------------------|
-| 10   | AP-MGMT      | 10.10.10.0/24    | 10.10.10.1        | AP mgmt/native for AP uplinks if needed      |
-| 20   | USERS        | 10.10.20.0/24    | 10.10.20.1        | PCs/printer access                           |
-| 30   | XBOX-GAMING  | 10.10.30.0/24    | 10.10.30.1        | UPnP allowed; Internet only                  |
-| 40   | IOT          | 10.10.40.0/24    | 10.10.40.1        | Block lateral; allow Internet                |
-| 60   | SERVICES     | 10.10.60.0/24    | 10.10.60.1        | Shared services (e.g., **Printer**)          |
-| 99   | MGMT         | 10.10.99.0/24    | 10.10.99.1        | Switch/AP/pfSense management (optional)      |
+| 10   | AP-MGMT      | <IP-REDACTED>/24    | <IP-REDACTED>        | AP mgmt/native for AP uplinks if needed      |
+| 20   | USERS        | <IP-REDACTED>/24    | <IP-REDACTED>        | PCs/printer access                           |
+| 30   | XBOX-GAMING  | <IP-REDACTED>/24    | <IP-REDACTED>        | UPnP allowed; Internet only                  |
+| 40   | IOT          | <IP-REDACTED>/24    | <IP-REDACTED>        | Block lateral; allow Internet                |
+| 60   | SERVICES     | <IP-REDACTED>/24    | <IP-REDACTED>        | Shared services (e.g., **Printer**)          |
+| 99   | MGMT         | <IP-REDACTED>/24    | <IP-REDACTED>        | Switch/AP/pfSense management (optional)      |
 
-> Printer will live at **10.10.60.10** in VLAN 60 so all VLANs can print via tight firewall rules.
+> Printer will live at **<IP-REDACTED>** in VLAN 60 so all VLANs can print via tight firewall rules.
 
 ---
 
@@ -65,12 +65,12 @@ During the wizard:
 et0 (VirtIO).
 - Assign **LAN** to the interface backed by 
 et1 (VirtIO).
-- Set LAN temporary IP (e.g., 10.10.99.1/24) so you can reach the web GUI.
+- Set LAN temporary IP (e.g., <IP-REDACTED>/24) so you can reach the web GUI.
 
-Browse to https://10.10.99.1 and run the setup wizard:
-- Set hostname (e.g., pfsense), domain (williams.local), time/NTP.
+Browse to https://<IP-REDACTED> and run the setup wizard:
+- Set hostname (e.g., pfsense), domain (williams.home.arpa), time/NTP.
 - WAN: DHCP (typical for ISP).
-- LAN: keep 10.10.99.1/24 for mgmt or change to your preferred LAN.
+- LAN: keep <IP-REDACTED>/24 for mgmt or change to your preferred LAN.
 
 ---
 
@@ -82,12 +82,12 @@ Browse to https://10.10.99.1 and run the setup wizard:
 **Interfaces → Assignments**  
 - Add each new VLAN as an OPT interface → click each → **Enable**, set:
   - Static IPv4:
-    - VLAN10 → 10.10.10.1/24
-    - VLAN20 → 10.10.20.1/24
-    - VLAN30 → 10.10.30.1/24
-    - VLAN40 → 10.10.40.1/24
-    - VLAN60 → 10.10.60.1/24
-    - (MGMT VLAN99 may stay on native LAN if you prefer; otherwise give it 10.10.99.1/24 on VLAN99)
+    - VLAN10 → <IP-REDACTED>/24
+    - VLAN20 → <IP-REDACTED>/24
+    - VLAN30 → <IP-REDACTED>/24
+    - VLAN40 → <IP-REDACTED>/24
+    - VLAN60 → <IP-REDACTED>/24
+    - (MGMT VLAN99 may stay on native LAN if you prefer; otherwise give it <IP-REDACTED>/24 on VLAN99)
 
 ---
 
@@ -95,12 +95,12 @@ Browse to https://10.10.99.1 and run the setup wizard:
 **Services → DHCP Server**
 - Enable DHCP on: VLAN10/20/30/40/60 (and 99 if desired).
 - Example ranges:
-  - VLAN10: 10.10.10.50–10.10.10.200
-  - VLAN20: 10.10.20.50–10.10.20.200
-  - VLAN30: 10.10.30.50–10.10.30.200
-  - VLAN40: 10.10.40.50–10.10.40.200
-  - VLAN60: 10.10.60.50–10.10.60.200
-- **Static mapping** (Printer): VLAN60 → 10.10.60.10 to the printer MAC.
+  - VLAN10: <IP-REDACTED>–<IP-REDACTED>
+  - VLAN20: <IP-REDACTED>–<IP-REDACTED>
+  - VLAN30: <IP-REDACTED>–<IP-REDACTED>
+  - VLAN40: <IP-REDACTED>–<IP-REDACTED>
+  - VLAN60: <IP-REDACTED>–<IP-REDACTED>
+- **Static mapping** (Printer): VLAN60 → <IP-REDACTED> to the printer MAC.
 
 > DNS: keep pfSense (Unbound) for now; in Phase 4 you can forward to Pi-hole.
 
@@ -108,8 +108,8 @@ Browse to https://10.10.99.1 and run the setup wizard:
 
 ## 🔐 Baseline Firewall Rules (per interface)
 **Firewall → Aliases**
-- **NETS_ALLOWED_TO_PRINTER** = 10.10.10.0/24, 10.10.20.0/24, 10.10.30.0/24, 10.10.40.0/24
-- **PRINTER_IP** = 10.10.60.10
+- **NETS_ALLOWED_TO_PRINTER** = <IP-REDACTED>/24, <IP-REDACTED>/24, <IP-REDACTED>/24, <IP-REDACTED>/24
+- **PRINTER_IP** = <IP-REDACTED>
 - **PRINTER_PORTS** = TCP 9100, TCP 631
 
 **Firewall → Rules → (each VLAN)**
@@ -129,7 +129,7 @@ Browse to https://10.10.99.1 and run the setup wizard:
 
 **Xbox UPnP (VLAN30 only)**
 - **Services → UPnP & NAT-PMP**: Enable on **VLAN30** interface only.
-- Set ACL to allow 10.10.30.0/24 and deny others.
+- Set ACL to allow <IP-REDACTED>/24 and deny others.
 
 ---
 
@@ -152,7 +152,7 @@ Browse to https://10.10.99.1 and run the setup wizard:
 
 ## 🧪 Testing
 - Client on each VLAN gets correct DHCP scope/gateway.
-- From a user VLAN, print to 10.10.60.10.
+- From a user VLAN, print to <IP-REDACTED>.
 - Xbox NAT Type → **Open** (with UPnP on VLAN30).
 - Inter-VLAN isolation verified (cannot ping other VLAN gateways).
 - Internet works from each VLAN.
@@ -178,4 +178,8 @@ Browse to https://10.10.99.1 and run the setup wizard:
 ## ✅ Status
 pfSense VM deployed with WAN/LAN, VLANs, DHCP scopes, core firewall rules, printer exception, and (optional) Xbox UPnP.  
 Next: Phase 4 – VLAN testing, Pi-hole integration, and Home Assistant.
+
+
+
+
 
