@@ -1,4 +1,8 @@
-﻿# Phase 2 – Proxmox Installation
+﻿---
+title: Phase 2 – Proxmox
+nav_order: 20
+---
+# Phase 2 – Proxmox Installation
 
 
 
@@ -171,6 +175,7 @@ Proxmox VE installed and accessible via web interface. Networking confirmed oper
 •	Confirmed FrankenServer now manageable via both Web GUI and SSH.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 
 

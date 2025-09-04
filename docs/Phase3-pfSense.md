@@ -1,4 +1,8 @@
-﻿# Phase 3 – pfSense VM Deployment
+﻿---
+title: Phase 3 – pfSense
+nav_order: 30
+---
+# Phase 3 – pfSense VM Deployment
 
 ## 🎯 Objective
 Deploy **pfSense** as a VM on Proxmox to provide routing, firewall, DHCP/DNS, and VLAN segmentation for FrankenServer.  
@@ -178,6 +182,7 @@ Browse to https://<IP-REDACTED> and run the setup wizard:
 ## ✅ Status
 pfSense VM deployed with WAN/LAN, VLANs, DHCP scopes, core firewall rules, printer exception, and (optional) Xbox UPnP.  
 Next: Phase 4 – VLAN testing, Pi-hole integration, and Home Assistant.
+
 
 
 

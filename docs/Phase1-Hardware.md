@@ -1,4 +1,8 @@
-﻿# Phase 1 – Hardware Build
+﻿---
+title: Phase 1 – Hardware
+nav_order: 10
+---
+# Phase 1 – Hardware Build
 
 
 
@@ -51,6 +55,7 @@
 
 
 > \*\*Note:\*\* IPs/hostnames in docs are sanitized for security; production uses different ranges and credentials.
+
 
 
 

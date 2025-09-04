@@ -1,4 +1,8 @@
 ﻿title: Project FrankenServer
 description: Proxmox + pfSense homelab with VLANs, Pi-hole, Home Assistant (sanitized docs & configs).
-theme: jekyll-theme-cayman
-show_downloads: false
+remote_theme: just-the-docs/just-the-docs
+search_enabled: true
+color_scheme: dark
+aux_links:
+  View on GitHub: https://github.com/Redleg101/Project-FrankenServer
+footer_content: \"© 2025 Anthony Scott Williams — Sanitized documentation\"

@@ -1,4 +1,8 @@
-﻿# Phase 4 – VLANs, Pi-hole, and Home Assistant
+﻿---
+title: Phase 4 – VLANs / Pi-hole / HA
+nav_order: 40
+---
+# Phase 4 – VLANs, Pi-hole, and Home Assistant
 
 ## 🎯 Objective
 Finalize network segmentation, deploy Pi-hole for DNS filtering, and stand up Home Assistant—while keeping inter-VLAN access tightly controlled and your printer reachable from all user nets.
@@ -90,6 +94,7 @@ slookup github.com → **server** shows Pi-hole or pfSense (per option).
 
 ## ✅ Status
 VLANs enforced, DNS filtering via Pi-hole, HA online, least-privilege rules with targeted exceptions.
+
 
 
 
