@@ -1,0 +1,32 @@
+﻿# Keep real configs & secrets out of Git
+configs/*.xml
+configs/*.conf
+configs/*.cfg
+*.key
+*.crt
+*.pem
+*.p12
+*.ovpn
+*.kdbx
+*.vault
+secrets/
+*.secret.*
+*.backup
+
+# Windows / OneDrive clutter
+Thumbs.db
+Desktop.ini
+*.lnk
+~$*
+*.tmp
+*.bak
+.BIN/
+System Volume Information/
+
+# Logs / editors
+logs/
+*.log
+.vscode/
+
+# Draw.io temp
+docs/Diagrams/*.drawio.bak
