@@ -1,4 +1,5 @@
 ﻿---
+image: /Project-FrankenServer/assets/og/frankenserver-og.png
 title: Home
 nav_order: 1
 ---

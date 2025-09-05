@@ -7,3 +7,8 @@ search_enabled: true
 color_scheme: dark
 aux_links:
   "View on GitHub": https://github.com/Redleg101/Project-FrankenServer
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+url: https://redleg101.github.io
+baseurl: /Project-FrankenServer
