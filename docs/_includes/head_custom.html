@@ -1,15 +1,11 @@
-﻿{% assign og_title = page.title | default: site.title %}
-{% assign og_desc  = page.description | default: site.description %}
-{% assign og_img   = page.image | default: '/assets/og/frankenserver-og.png' %}
+﻿<link rel=""canonical"" href=""https://redleg101.github.io/Project-FrankenServer/"" />
+<meta property=""og:type"" content=""website"">
+<meta property=""og:title"" content=""Project FrankenServer"">
+<meta property=""og:description"" content=""Proxmox + pfSense home lab built from spare hardware (“FrankenServer”). VMs with VLANs (Private, XBOX, IOT, Security, Lab) and services incl. storage, VPN, NVR/security cams, DHCP/DNS, Pi-hole, Home Assistant. Public docs are sanitized."">
+<meta property=""og:image"" content=""https://redleg101.github.io/Project-FrankenServer/assets/og/frankenserver-og.png"">
+<meta property=""og:url"" content=""https://redleg101.github.io/Project-FrankenServer/"">
 
-<link rel="canonical" href="{{ page.url | absolute_url }}">
-<meta property="og:type"        content="website">
-<meta property="og:title"       content="{{ og_title }}">
-<meta property="og:description" content="{{ og_desc }}">
-<meta property="og:image"       content="{{ og_img | absolute_url }}">
-<meta property="og:url"         content="{{ page.url | absolute_url }}">
-
-<meta name="twitter:card"        content="summary_large_image">
-<meta name="twitter:title"       content="{{ og_title }}">
-<meta name="twitter:description" content="{{ og_desc }}">
-<meta name="twitter:image"       content="{{ og_img | absolute_url }}">
+<meta name=""twitter:card"" content=""summary_large_image"">
+<meta name=""twitter:title"" content=""Project FrankenServer"">
+<meta name=""twitter:description"" content=""Proxmox + pfSense home lab (sanitized docs)."">
+<meta name=""twitter:image"" content=""https://redleg101.github.io/Project-FrankenServer/assets/og/frankenserver-og.png"">
