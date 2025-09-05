@@ -22,10 +22,22 @@ Proxmox + pfSense homelab showcasing virtualization, VLAN segmentation, Pi-hole,
 ---
 
 ## Addressing (example)
-| VLAN | Name | Subnet | Gateway | Key Hosts |
-|-----:|------|--------|---------|-----------|
-| 20 | USERS | 10.100.20.0/24 | 10.100.20.1 | — |
-| 30 | XBOX | 10.100.30.0/24 | 10.100.30.1 | — |
-| 40 | IOT | 10.100.40.0/24 | 10.100.40.1 | — |
-| 60 | SERVICES | 10.100.60.0/24 | 10.100.60.1 | Printer 10.100.60.10, Pi-hole 10.100.60.20 |
-| 99 | MGMT | 10.100.99.0/24 | 10.100.99.1 | Switch/AP/pfSense |
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:right;">VLAN</th>
+      <th>Name</th>
+      <th>Subnet</th>
+      <th>Gateway</th>
+      <th>Key Hosts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:right;">20</td><td>USERS</td><td><code>10.100.20.0/24</code></td><td><code>10.100.20.1</code></td><td>—</td></tr>
+    <tr><td style="text-align:right;">30</td><td>XBOX</td><td><code>10.100.30.0/24</code></td><td><code>10.100.30.1</code></td><td>—</td></tr>
+    <tr><td style="text-align:right;">40</td><td>IOT</td><td><code>10.100.40.0/24</code></td><td><code>10.100.40.1</code></td><td>—</td></tr>
+    <tr><td style="text-align:right;">60</td><td>SERVICES</td><td><code>10.100.60.0/24</code></td><td><code>10.100.60.1</code></td><td>Printer <code>10.100.60.10</code>, Pi-hole <code>10.100.60.20</code></td></tr>
+    <tr><td style="text-align:right;">99</td><td>MGMT</td><td><code>10.100.99.0/24</code></td><td><code>10.100.99.1</code></td><td>Switch/AP/pfSense</td></tr>
+  </tbody>
+</table>
