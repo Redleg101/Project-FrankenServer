@@ -1,5 +1,5 @@
 ﻿---
-title: Project FrankenServe
+title: Project FrankenServer
 nav_order: 1
 has_toc: true
 image: /assets/og/frankenserver-og.png
@@ -44,3 +44,4 @@ Proxmox + pfSense homelab showcasing virtualization, VLAN segmentation, Pi-hole,
     <tr><td style="text-align:right;">99</td><td>MGMT</td><td><code>10.100.99.0/24</code></td><td><code>10.100.99.1</code></td><td>Switch/AP/pfSense</td></tr>
   </tbody>
 </table>
+
