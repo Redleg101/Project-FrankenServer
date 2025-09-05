@@ -3,6 +3,7 @@ description: Proxmox + pfSense homelab with VLANs, Pi-hole, Home Assistant (sani
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
 search_enabled: true
 color_scheme: dark
 aux_links:
