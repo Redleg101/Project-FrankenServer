@@ -1,7 +1,9 @@
 ﻿---
-image: /Project-FrankenServer/assets/og/frankenserver-og.png
-title: Home
+title: Project FrankenServe
 nav_order: 1
+has_toc: true
+image: /Project-FrankenServer/assets/og/frankenserver-og.png
+description: Proxmox + pfSense home lab built from spare hardware (“FrankenServer”). Virtual machines with VLANs (Private, XBOX, IOT, Security, Lab) and services including storage, VPN, NVR/security cameras, DHCP/DNS, Pi-hole, and Home Assistant. Public docs are sanitized.
 ---
 
 # Project FrankenServer
